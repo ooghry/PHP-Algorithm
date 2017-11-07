@@ -1,8 +1,9 @@
 <?php
-namespace Algorithm;
+
+namespace Phoghry\Sort;
 
 
-class SortMerge
+class Merge
 {
     public function sort($input)
     {

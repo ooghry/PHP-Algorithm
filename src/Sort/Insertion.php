@@ -1,10 +1,12 @@
 <?php
-namespace Algorithm;
+
+namespace Phoghry\Sort;
 
 
-class SortInsertion
+class Insertion
 {
-    public function sort($input){
+    public function sort($input)
+    {
         $count = count($input);
         for ($i = 1; $i < $count; $i++) {
             for ($j = $i; $j > 0; $j--) {

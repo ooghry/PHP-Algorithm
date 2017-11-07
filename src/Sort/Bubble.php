@@ -1,8 +1,9 @@
 <?php
-namespace Algorithm;
+
+namespace Phoghry\Sort;
 
 
-class SortBubble
+class Bubble
 {
     public function sort($input){
         $count=count($input);
