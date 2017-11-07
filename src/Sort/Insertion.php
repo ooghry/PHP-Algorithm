@@ -10,10 +10,13 @@ class Insertion
         $count = count($input);
         for ($i = 1; $i < $count; $i++) {
             for ($j = $i; $j > 0; $j--) {
-                if ($input[$j - 1] > $input[$j]) {
-                    $temp = $input[$j];
-                    $input[$j] = $input[$j - 1];
-                    $input[$j - 1] = $temp;
+                $tempCurrent = $input[$j];
+                $tempLeft = $input[$j - 1];
+                if ($tempLeft > $tempCurrent) {
+                    $input[$j] = $tempLeft;
+                    $input[$j - 1] = $tempCurrent;
+                } else {
+                    break;
                 }
             }
         }
